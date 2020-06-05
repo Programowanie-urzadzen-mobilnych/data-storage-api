@@ -7,17 +7,6 @@ import lombok.Data;
 
 @Data
 public class NodeVariable {
-    /**
-     UUID urządzenia z którego odczytana była zmienna.
-     */
-    private UUID deviceUUID;
-    /**
-     * Nazwa zmiennej
-     */
-    private String name;
-    /**
-     * Obecna wartość na węźle lub null gdy odczytywane z bazy danych
-     */
     private NodeValue currentValue;
     /**
      * Historia wartości
