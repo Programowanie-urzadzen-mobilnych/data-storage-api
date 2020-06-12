@@ -1,20 +1,22 @@
 package pl.grupa33inf.ssi.data_store.api;
 
 import java.util.List;
-import java.util.UUID;
 
-import lombok.Data;
+import lombok.Value;
 
-@Data
+@Value
 public class NodeVariable {
-    private NodeValue currentValue;
+    /**
+     * Obecna wartość
+     */
+    NodeValue currentValue;
     /**
      * Historia wartości
      */
-    private List<NodeValue> history;
+    List<NodeValue> history;
     /**
      * Zmienna readonly = true to zmienna która została odczytana z sensorów.
      * Zmienna readonly = false to zmienna konfiguracyjna
      */
-    private boolean readonly;
+    boolean readonly;
 }
