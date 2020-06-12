@@ -1,14 +1,22 @@
 package pl.grupa33inf.ssi.data_store.api;
 
-import java.time.LocalDateTime;
 import java.util.Date;
 
 import lombok.Builder;
-import lombok.Data;
+import lombok.Value;
 
-@Data
+/**
+ * Pojedyncza wartość zmiennej na węźle
+ */
+@Value
 @Builder
 public class NodeValue {
-    private String value;
-    private Date timestamp;
+    /**
+     * Wartość zmiennej
+     */
+    String value;
+    /**
+     * Znacznik czasowy mówiący kiedy zmienna została odczytana/zapisana
+     */
+    Date timestamp;
 }

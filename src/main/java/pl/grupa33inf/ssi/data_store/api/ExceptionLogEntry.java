@@ -1,31 +1,28 @@
 package pl.grupa33inf.ssi.data_store.api;
 
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-import lombok.Builder;
-import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.experimental.SuperBuilder;
+import lombok.Value;
 
-
+/**
+ * Wydarzenie logowane w baze, będące wynikiem rzucenia wyjątkiem
+ */
 @EqualsAndHashCode(callSuper = true)
-@Data
+@Value
 public class ExceptionLogEntry extends LogEntry {
     /**
      * Wiadomośc wyjątku
      */
-    private String message;
+    String message;
     /**
-     * Ślad stosu wyjątku
+     * Dodatkowe dane do zapisu
      */
-    private String additionalData;
+    String additionalData;
 
-    @Builder
-    public ExceptionLogEntry(String message, String additionalData/*, String phoneUUID*/){
+    public ExceptionLogEntry(String message, String additionalData/*, String phoneUUID*/) {
         super(/*phoneUUID, */EntryType.EXCEPTION);
 
         this.message = message;
         this.additionalData = additionalData;
     }
+
 }
