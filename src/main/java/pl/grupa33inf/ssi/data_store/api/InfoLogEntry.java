@@ -5,17 +5,17 @@ import lombok.EqualsAndHashCode;
 import lombok.Value;
 
 /**
- * Wydażenie informujące o czymś, niekoniecznie o problemie
+ * Wydarzenie informujące o czymś, niekoniecznie o problemie
  */
 @EqualsAndHashCode(callSuper = true)
 @Value
 public class InfoLogEntry extends LogEntry {
     /**
-     * Główna wiadomość wydażenia
+     * Główna wiadomość wydarzenia
      */
     String message;
     /**
-     * Dodatkowe informacje o zdażeniu
+     * Dodatkowe informacje o zdarzeniu
      */
     String additionalData;
 

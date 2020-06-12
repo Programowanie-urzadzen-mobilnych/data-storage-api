@@ -4,6 +4,9 @@ import java.util.List;
 
 import lombok.Value;
 
+/**
+ * Zmienna na węźle, razem z historią
+ */
 @Value
 public class NodeVariable {
     /**

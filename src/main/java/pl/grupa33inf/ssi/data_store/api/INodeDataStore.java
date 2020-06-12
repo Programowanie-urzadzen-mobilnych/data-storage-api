@@ -5,6 +5,9 @@ import java.util.Optional;
 import java.util.UUID;
 import java.util.concurrent.ExecutionException;
 
+/**
+ * Interfejs do zapisu, odczytu i usuwania zmiennych
+ */
 public interface INodeDataStore {
     /**
      * Odczytuje jedną zmienną o konkretnej nazwie z konkretnego urządzenia

@@ -3,7 +3,9 @@ package pl.grupa33inf.ssi.data_store.api;
 import lombok.EqualsAndHashCode;
 import lombok.Value;
 
-
+/**
+ * Wydarzenie logowane w baze, będące wynikiem rzucenia wyjątkiem
+ */
 @EqualsAndHashCode(callSuper = true)
 @Value
 public class ExceptionLogEntry extends LogEntry {

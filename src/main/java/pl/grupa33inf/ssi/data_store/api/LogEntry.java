@@ -4,10 +4,14 @@ import java.util.Date;
 
 import lombok.Data;
 
+
+/**
+ * Podstawowe wydarzenie. Używaj ExceptionLogEntry lub InforLogEntry
+ */
 @Data
 public class LogEntry {
     /**
-     * Czas wystąpienia wydażenia
+     * Czas wystąpienia wydarzenia
      */
     private Date timestamp;
 
@@ -19,7 +23,7 @@ public class LogEntry {
 //    private String phoneIdentifier;
 
     /**
-     * Typ wydażenia
+     * Typ wydarzenia
      */
     private EntryType type;
 
