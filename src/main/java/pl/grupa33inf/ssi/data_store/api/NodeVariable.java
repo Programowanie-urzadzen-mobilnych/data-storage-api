@@ -16,6 +16,7 @@ public class NodeVariable {
     /**
      * Historia wartości
      */
+
     List<NodeValue> history;
     /**
      * Zmienna readonly = true to zmienna która została odczytana z sensorów.
