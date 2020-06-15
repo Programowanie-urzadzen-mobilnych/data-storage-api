@@ -44,5 +44,6 @@ public interface INodeDataStore {
      * @param variableName Nazwa zmiennej do usunięcia
      */
     void deleteVariable(UUID deviceUUID, String variableName);
+
 }
 
